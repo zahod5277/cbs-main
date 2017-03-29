@@ -382,6 +382,10 @@ background-position-x: left;
   width: 31px;
   z-index: 1000; }
 
+.menu_top .parent:hover ul {
+    display: block;
+}
+
 .menu_top .parent ul {
   background: #fff none repeat scroll 0 0;
   border-top: 1px solid #d0d0d0;
@@ -390,7 +394,8 @@ background-position-x: left;
   padding: 20px 0;
   position: absolute;
   display: none;
-  top: 120px;
+  top:91px;
+/*  top: 120px;*/
   width: 1080px;
   z-index: 10;
   box-shadow: 0px 12px 8px -6px #999; }
@@ -442,7 +447,7 @@ background-position-x: left;
 .menu_top .parent a:hover {
   color: #006eb8; }
 
-.menu_top > li > a, .menu_top > li.parent .separator, .menu_top li.parent > a, .menu_bottom > li > a, .menu_bottom > li.parent .separator {
+.menu_top > li > a, .menu_top li.parent > a, .menu_bottom > li > a, .menu_bottom > li.parent .separator {
   color: #000;
   text-transform: uppercase; }
 
@@ -4156,6 +4161,8 @@ div.itemFullText p,div.itemFullText div{
 .tushenka{
     display: none;
 }
+
+
 
 @media print{    
     .phonesPrinted{
