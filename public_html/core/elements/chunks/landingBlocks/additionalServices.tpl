@@ -10,9 +10,8 @@
                         {$_modx->runSnippet('pdoResources',[
                         'parents' => $_modx->resource.id,
                         'hideContainers' => 1,
-                        'limit' => '12',
+                        'limit' => 0,
                         'depth' => 0,
-                        'where' => '{"template:=":"15"}',
                         'resources' => -$_modx->resource.id,
                         'totalVar' => 'totalus',
                         'tpl' => '@FILE:chunks/landingBlocks/tpl/additionalService.row.tpl'
