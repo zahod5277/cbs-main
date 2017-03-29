@@ -41,6 +41,10 @@
     margin-top: 8px!important;
 }
 
+.static-top-menu .top-icon{
+    padding-left: 9px!important;
+}
+
 .breadcrumbs-link{
     color:white;
     font-size: 18px;
@@ -53,7 +57,7 @@
 
 .infocenterBreadcrumbCrumbs{
     padding-top: 13px;
-    width: 810px!important;
+    width: 816px!important;
 }
 
 div.infocenterBreadcrumb span.bcSeparator {
@@ -82,6 +86,7 @@ div.infocenterBreadcrumb span.bcSeparator {
     position: relative;
     left: 43px;
     top: 1px;
+    font-family: RobotoLight;
 }
 
 .zoomIco{
@@ -111,7 +116,7 @@ div.infocenterBreadcrumb span.bcSeparator {
 }
 
 .articleTitle h1{
-    font-size: 33px;
+    font-size: 32px;
     color:#0061ab;
     line-height: 41px;
 }
@@ -133,8 +138,12 @@ div.infocenterBreadcrumb span.bcSeparator {
 }
 .infocenterSidebar{
     padding: 0px!important;
-    margin-left: 66px!important;
-    width: 25.5%!important;
+    margin-left: 73px!important;
+    width: 284px!important;
+}
+
+.infocenterSidebar input, .infocenterSidebar textarea{
+    font-family: RobotoLight, sans-serif;
 }
 
 .infoCenterArticleTitle h1{
@@ -152,6 +161,15 @@ div.infocenterBreadcrumb span.bcSeparator {
     clear: both;
 }
 
+.infocenterNewsRating a:hover{
+    background-position:0;
+}
+
+.infocenterNewsRating a:hover{
+    background: none!important;
+    cursor:default;
+}
+
 .infocenterRatingOuter .itemRatingList{
     margin-left: 25px;
 }
@@ -161,7 +179,6 @@ div.infocenterBreadcrumb span.bcSeparator {
    line-height: 28px!important;
    text-align: justify!important;
    margin: 0px!important;
-   font-family: Roboto, sans-serif!important;
 }
 
 .infocenterRatingOuter .itemDateCreatedOuter{
@@ -169,16 +186,15 @@ div.infocenterBreadcrumb span.bcSeparator {
 }
 
 .infocenterRatingOuter .itemDateCreatedOuter span{
-    font-size: 16px!important;
     color:black!important;
 }
 
 .infocenterNewsRating{
-    margin-left: 75px;
+    margin-left: 110px;
 }
 
 .infocenterViews{
-    margin-left: 55px;
+    margin-left: 80px;
 }
 
 .viewProgress{
@@ -194,7 +210,7 @@ div.infocenterBreadcrumb span.bcSeparator {
 }
 
 .infocenterUnderContent{
-    margin-top: 50px;
+    margin-top: 30px;
     float: left;
     clear: both;
 }
@@ -208,6 +224,11 @@ div.infocenterBreadcrumb span.bcSeparator {
     color:#215dab!important;
     font-weight: 400!important;
     font-family: RobotoLight;
+}
+
+.underContentRating .ratingStars{
+    position: relative;
+    top: 3px;
 }
 
 .ratingAndSocials{
@@ -247,6 +268,7 @@ div.infocenterBreadcrumb span.bcSeparator {
     padding-left: 13px;
     display: inline-block;
     margin-bottom: 10px;
+    font-family: RobotoLight, sans-serif;
 }
 
 .underContentPrintBtn{
@@ -268,7 +290,7 @@ div.infocenterBreadcrumb span.bcSeparator {
 
 .printSendOuter{
     position: relative;
-    top: 12px;
+    top: 21px;
     left: -5px;
 }
 
@@ -294,7 +316,7 @@ div.infocenterBreadcrumb span.bcSeparator {
 }
 
 .underContentShareIcons{
-    margin-top: 37px;
+    margin-top: 47px;
     float: left;
 }
 
@@ -308,7 +330,7 @@ div.infocenterBreadcrumb span.bcSeparator {
 .actualImportant{
     background: #046eb7;
     border-radius: 5px 5px 0px 0px;
-    padding: 14px 15px 10px 30px;
+    padding: 14px 5px 10px 5px;
     color: white;
     margin-top: 40px;
 }
@@ -319,24 +341,28 @@ div.infocenterBreadcrumb span.bcSeparator {
     padding-bottom: 8px;
     text-transform: uppercase;
     margin: 0px!important;
+    text-align: center;
 }
 
 .actualImportant p{
     text-align: center;
     margin: 0px!important;
-    font-size: 12px;
+    font-size: 16px;
+    font-family: RobotoLight, sans-serif;
 }
 
 .infocenterSidebarDescr{
-    background: #002157;
+background: #002157;
     border-radius: 0px 0px 5px 5px;
-    padding: 4px 15px 6px 29px;
+    padding: 10px 5px 10px 18px;
     color: white;
+    text-align: center;
 }
 
 .infocenterSidebarDescr p{
+    font-family: RobotoLight, sans-serif;
     margin: 0px!important;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px;
 }
 
@@ -353,7 +379,7 @@ div.infocenterBreadcrumb span.bcSeparator {
 .infocenterSideBarServices h3{
     padding-top: 37px;
     margin: 0px!important;
-    font-size: 20px;
+    font-size: 21px;
     color:#002157;
     padding-bottom: 15px;
     
@@ -369,11 +395,12 @@ div.infocenterBreadcrumb span.bcSeparator {
 
 .infocenterSideBarServices ul li a{
     color:#215dab;
-    font-size: 18px;
-    padding-bottom: 11px;
+    font-size: 16px;
+    padding-bottom: 8px;
     display: inline-block;
     text-transform: uppercase;
     font-family: RobotoLight, 'Open Sans', sans-serif;
+    text-decoration: underline;
 }
 
 .infocenterRedModal{
@@ -384,10 +411,13 @@ div.infocenterBreadcrumb span.bcSeparator {
     color:white;
     border-radius: 5px;
     margin-top: 30px;
+    margin-bottom: 8px;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: RobotoLight, sans-serif;
     line-height: 18px;
-    cursor: pointer;
+    height: 80px;
+    padding-top: 22px;
 }
 
 .infocenterRedModal:hover{
@@ -396,7 +426,8 @@ div.infocenterBreadcrumb span.bcSeparator {
 }
 
 .infocenterSideBarConsult{
-padding: 9px 25px 9px 22px;
+    padding: 9px 25px 9px 22px;
+    font-family: RobotoLight,sans-serif;
     background: #0067aa;
     border-radius: 5px;
     color: white;
@@ -406,8 +437,14 @@ padding: 9px 25px 9px 22px;
     margin-bottom: 8px;
 }
 
+.infocenterSideBarConsult a,.infocenterSideBarConsult a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
 .infocenterSideBarConsult h3,.infocenterSideBarConsult p{
     margin: 0px!important;
+    text-align: center;
 }
 
 .infocenterSideBarConsult h3{
@@ -455,14 +492,13 @@ padding: 9px 25px 9px 22px;
 }
 
 .sub-friends span{
-    font-size: 22px!important;
+    font-size: 18px!important;
     font-family: RobotoLight;
-    padding-left: 12px;
     line-height: 29px;
 }
 
 .infocenterSubForm{
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 17px;
 }
 
@@ -477,7 +513,8 @@ padding: 9px 25px 9px 22px;
 
 .infocenterOtherCateg h3{
     color: #0067aa;
-    font-size: 36px;
+    font-size: 32px;
+    margin-top: 0px;
 }
 
 .chart{
@@ -492,14 +529,16 @@ padding: 9px 25px 9px 22px;
 }
 
 .infocenterOtherCateg ul{
-    margin-top: 54px;
+    margin-top: 50px;
     padding: 0px!important;
 }
 
 .infocenterOtherCateg ul li{
     display: inline-block;
     list-style: none;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    vertical-align: top;
 }
 
 .w78{
@@ -542,12 +581,13 @@ padding: 9px 25px 9px 22px;
 }
 
 .infocenterRecommended{
-    margin-top: 46px!important;
+    margin-top: 35px!important;
 }
 
 .infocenterRecommended h2{
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 .infocenterRecommendedTable td{
@@ -555,19 +595,27 @@ padding: 9px 25px 9px 22px;
 }
 
 .infocenterRecommendedTable td a{
-    font-size: 16px!important;
+    font-size: 14px!important;
+    padding-right: 35px!important;
 }
+
+.infocenterRecommendedTable td:nth-child(3n+0) a{
+    padding-right: 0px!important;
+}
+
 .infocenterRecommendedTable td .moduleItemDateCreated{
- padding-top: 20px!important;   
+ padding-top: 10px!important;   
  padding-bottom: 20px;
 }
 
 .infocenterOurReaders{
-    margin-top: 58px;
+    padding: 0px!important;
+    margin-top: 40px;
 }
 
 .infocenterOurReaders h2{
-    font-size: 36px;
+    font-size: 32px;
+    margin-top: 0px;
 }
 
 .infocenterOurReaders .custom_own_trust{
@@ -580,4 +628,12 @@ padding: 9px 25px 9px 22px;
     display: inline-block;
     background: url('../images/icon/team.png') no-repeat;
     margin-right: 14px;
+}
+
+.redbutton{
+    background: #9e0b0f!important;
+}
+
+.paddingTop5px{
+    padding-top: 5px;
 }
