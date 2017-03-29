@@ -49,7 +49,8 @@
                 <div class="leo-wrap-menu hidden-print">
                     <ul class="menu_top">
                         <li class="item-125 current active"><a href="/" >Главная</a></li>
-                        <li class="item-117 deeper parent"><span class="separator">Услуги</span>
+                        <li class="item-117 deeper parent">
+                            <a href="{$_modx->makeUrl(5010)}"><span class="separator">Услуги</span></a>
                             <ul>
                                 <li class="item-120">
                                     <a href="/auditorskie-uslugi" >Аудит</a>
