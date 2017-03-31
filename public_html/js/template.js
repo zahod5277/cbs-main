@@ -27,11 +27,11 @@ if (typeof jQuery != "undefined") jQuery(function ($) {
 			$(this).find('.relative').css({'top':'120px'}).closest('.service').find('.service-desc').css({'opacity':'0'});
 		}
 	);
-//	jQuery(".menu_top > .parent:first, .menu_bottom > .parent:first").on('click', function(event) {
-//		event.stopPropagation();
-//        $(this).toggleClass('active-parent');
-//        $(this).find('ul').toggle();
-//    });
+	jQuery(".menu_top > .parent:first, .menu_bottom > .parent:first").on('click', function(event) {
+		event.stopPropagation();
+        $(this).toggleClass('active-parent');
+        $(this).find('ul').toggle();
+    });
 	$('body').not('.menu_top').not('.menu_bottom').on('click', function() {
 		var menu = $(this).find('.menu_top > .parent:first');
 		if(menu.hasClass('active-parent')) {
