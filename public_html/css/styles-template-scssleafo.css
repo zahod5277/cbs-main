@@ -373,7 +373,7 @@ background-position-x: left;
   text-decoration: underline; }
 
 .menu_top > .active-parent::after {
-  background: rgba(0, 0, 0, 0) url("/images/little-up-arrow.png") no-repeat scroll left center;
+  background: rgba(0, 0, 0, 0) url("/images/blackrhomb.png") no-repeat scroll left center;
   content: "";
   height: 31px;
   left: 315px;
@@ -383,8 +383,9 @@ background-position-x: left;
   z-index: 1000; }
 
 .menu_top .parent ul {
-  background: #fff none repeat scroll 0 0;
-  border-top: 1px solid #d0d0d0;
+/*  background: #fff none repeat scroll 0 0;*/
+/*  border-top: 1px solid #d0d0d0;*/
+  background: rgba(0,0,0,0.5);
   left: -353px;
   list-style: outside none none;
   padding: 20px 0;
@@ -393,7 +394,9 @@ background-position-x: left;
   top: 120px;
   width: 1080px;
   z-index: 10;
-  box-shadow: 0px 12px 8px -6px #999; }
+/*  box-shadow: 0px 12px 8px -6px #999;*/
+/*  box-shadow: 0 8px 8px -6px #1e1e1e;*/
+}
 
 .menu_bottom .parent ul {
   background: #fff none repeat scroll 0 0;
@@ -408,7 +411,8 @@ background-position-x: left;
   box-shadow: 2px 2px 8px 2px #999; }
 
 .menu_bottom > .active-parent::after {
-  background: rgba(0, 0, 0, 0) url("/images/little-down-arrow.png") no-repeat scroll left center;
+ background: rgba(0, 0, 0, 0) url("/images/blackrhomb.png") no-repeat scroll left center;
+/*  background: rgba(0, 0, 0, 0) url("/images/little-down-arrow.png") no-repeat scroll left center;*/
   content: "";
   height: 31px;
   left: 216px;
@@ -3002,7 +3006,7 @@ header .menu_top .active-parent::after {
   width: 31px;
   z-index: 1000; }
   header .static-top-menu .menu_top .active-parent::after {
-    background: rgba(0, 0, 0, 0) url("/images/little-up-arrow.png") no-repeat scroll left center; }
+    background: rgba(0, 0, 0, 0) url("/images/blackrhomb.png") no-repeat scroll left center; }
 
 body.landingBody header{
   background: url('/images/full/slide1.jpg') no-repeat center top;
@@ -3038,19 +3042,43 @@ body.landingBody header{
   body.landingBody header .menu_top > .active-parent::after, {
     left: 238px;
     top: 106px;
-    background: rgba(0, 0, 0, 0) url("/images/little-up-arrow.png") no-repeat scroll left center; }
+    background: rgba(0, 0, 0, 0) url("/images/blackrhomb.png") no-repeat scroll left center; }
   body.landingBody header .menu_top .parent ul{
     left: 85px;
-    width: 660px;
+    width: 643px;
     padding: 20px;
-    text-align: justify; }
+    text-align: justify; 
+  }
+  body.menuBody header .menu_top .parent ul{
+    left: 84px;
+    top: 122px;
+    width: 538px;
+    padding: 20px;
+    text-align: justify;
+  }
     body.landingBody header .menu_top .parent ul li{
-      margin: 0 15px;
+      margin: 0 8px;
+      display: inline;
+      float: none; }
+    body.menuBody header .menu_top .parent ul li{
+      margin: 0 5px;
       display: inline;
       float: none; }
       body.landingBody header .menu_top .parent ul li a{
-        color: black !important;
+/*        color: black !important;*/
+        color: white !important;
+        text-transform: uppercase;
         font-size: 14px; }
+      body.menuBody header .menu_top .parent ul li a{
+        color: white !important;
+        text-transform: uppercase;
+        font-size: 12px; 
+      }
+       body.menuBody .static-top-menu .menu_top .parent ul li a{
+        color: white !important;
+        text-transform: uppercase;
+        font-size: 14px; 
+      }
       body.landingBody header .menu_top .parent ul li:first-child{
         margin-left: 0; }
       body.landingBody header .menu_top .parent ul li:last-child{
@@ -3065,6 +3093,11 @@ body.landingBody header{
 
 .menu_top > .active-parent::after{
     left: 238px!important;
+    top: 106px!important;
+}
+
+.menuBody .menu_top > .active-parent::after{
+    left: 209px!important;
     top: 106px!important;
 }
 
@@ -3260,11 +3293,13 @@ body.lang-ru header .static-top-menu {
     padding: 20px;
     left: 0; }
     body.lang-ru header .static-top-menu .menu_top > li.parent ul li {
-      margin: 0 90px 0 10px !important;
+      margin: 0 79px 0 10px !important;
       display: inline;
       float: none; }
       body.lang-ru header .static-top-menu .menu_top > li.parent ul li a {
-        color: black !important; }
+/*        color: black !important; }*/
+        color: white !important; 
+      }
   body.lang-ru header .static-top-menu .static-wrapper-phone {
     position: relative;
     top: 15px;

@@ -54,17 +54,17 @@
                                 <li class="item-120">
                                     <a href="/auditorskie-uslugi" >Аудит</a>
                                 </li>
-                                <li class="item-121">
-                                    <a href="/konsaltingovie-uslugi" >Консалтинг</a>
-                                </li>
                                 <li class="item-129">
                                     <a href="/buhgalterskie-uslugi" >Учет</a>
                                 </li>
-                                <li class="item-130">
-                                    <a href="/msfo">МСФО</a>
+                                <li class="item-121">
+                                    <a href="/konsaltingovie-uslugi" >Консалтинг</a>
                                 </li>
                                 <li class="item-131">
                                     <a href="/nalogovoe-planirovanie-i-due-diligence" >Экспертизы</a>
+                                </li>
+                                <li class="item-130">
+                                    <a href="/msfo">МСФО</a>
                                 </li>
                                 <li class="item-132">
                                     <a href="/avtomatizaciya-1c" >Автоматизация</a>

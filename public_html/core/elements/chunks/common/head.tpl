@@ -15,6 +15,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:description" content="{$_modx->resource.seoDescription}" />
     <meta name="keywords" content="{$_modx->resource.keywords}" />
+    <meta name="yandex-verification" content="e7a35e4d705ce10e" />
     {if $_modx->resource.seoDescription==''}
         {if $_modx->resource.seoTitle!=''}
                 <meta name="description" content="{$_modx->resource.seoTitle}" />
