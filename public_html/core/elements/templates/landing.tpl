@@ -23,7 +23,11 @@
     {block 'WELCOMETEXT'}
     {include 'file:chunks/common/breadcrumbs.tpl'}
         {block 'ADV'}
+            {if $_modx->user.id=='5'&&$_modx->resource.link_attributes=='***adminMode'}
+            {include 'file:chunks/landingBlocks/childService/childServiceOuter.tpl'}
+            {else}
             {include 'file:chunks/landingBlocks/adv.tpl'}
+            {/if}
         {/block}
     {include 'file:chunks/landingBlocks/video.tpl'}
     {include 'file:chunks/landingBlocks/adv2.tpl'}
@@ -39,7 +43,7 @@
     </div>
     {include 'file:chunks/landingBlocks/reviewsAndKeys.tpl'}
     {include 'file:chunks/landingBlocks/companyRecords.tpl'}
-    {*{include 'file:chunks/landingBlocks/additionalServices.tpl'}*}
+    {include 'file:chunks/landingBlocks/additionalServices.tpl'}
     {include 'file:chunks/landingBlocks/anyQuestions.tpl'}
     {include 'file:chunks/common/footer.tpl'}
     {include 'file:chunks/common/weCallYou.tpl'}

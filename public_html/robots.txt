@@ -1,2 +1,9 @@
 User-agent: *
-Disallow: /
+Disallow: /manager/
+Disallow: /assets/components/
+Disallow: /core/
+Disallow: /connectors/
+Disallow: /index.php
+Disallow: *?
+Host: cbscg.ru
+Sitemap: http://cbscg.ru/sitemap.xml

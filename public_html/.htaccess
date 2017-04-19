@@ -9,14 +9,47 @@
 # to your rule: RewriteRule ^(.*)$ index.php?q=$1 [L,QSA,NC]
 
 RewriteEngine On
-RewriteBase /
+#RewriteBase /
 
-
+RewriteRule ^auditorskie-uslugi/1$ http://www.cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^nalogovoe-planirovanie-i-due-diligence/1 http://cbscg.ru/nalogovoe-planirovanie-i-due-diligence [R=301,L]
+RewriteRule ^nalogovoe-planirovanie-i-due-diligence/2 http://cbscg.ru/nalogovoe-planirovanie-i-due-diligence [R=301,L]
+RewriteRule ^nalogovoe-planirovanie-i-due-diligence/3 http://cbscg.ru/nalogovoe-planirovanie-i-due-diligence [R=301,L]
+RewriteRule ^nalogovoe-planirovanie-i-due-diligence/4 http://cbscg.ru/nalogovoe-planirovanie-i-due-diligence [R=301,L]
+RewriteRule ^auditorskie-uslugi/1 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/2 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/3 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/4 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/5 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/6 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/7 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/8 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/9 http://cbscg.ru/auditorskie-uslugi [R=301,L]
+RewriteRule ^buhgalterskie-uslugi/1 http://cbscg.ru/buhgalterskie-uslugi [R=301,L]
+RewriteRule ^buhgalterskie-uslugi/2 http://cbscg.ru/buhgalterskie-uslugi [R=301,L]
+RewriteRule ^buhgalterskie-uslugi/3 http://cbscg.ru/buhgalterskie-uslugi [R=301,L]
+RewriteRule ^buhgalterskie-uslugi/4 http://cbscg.ru/buhgalterskie-uslugi [R=301,L]
+RewriteRule ^auditorskie-uslugi/anketa-audit/1 http://www.cbscg.ru/auditorskie-uslugi/anketa-audit [R=301,L]
+RewriteRule ^auditorskie-uslugi/anketa-audit/2 http://www.cbscg.ru/auditorskie-uslugi/anketa-audit [R=301,L]
+RewriteRule ^auditorskie-uslugi/anketa-audit/3 http://www.cbscg.ru/auditorskie-uslugi/anketa-audit [R=301,L]
+RewriteRule ^auditorskie-uslugi/anketa-audit/4 http://www.cbscg.ru/auditorskie-uslugi/anketa-audit [R=301,L]
+RewriteRule ^msfo/5 http://cbscg.ru/msfo [R=301,L]
+RewriteRule ^msfo/6 http://cbscg.ru/msfo [R=301,L]
+RewriteRule ^msfo/7 http://cbscg.ru/msfo [R=301,L]
+RewriteRule ^msfo/8 http://cbscg.ru/msfo [R=301,L]
+RewriteRule ^avtomatizaciya-1c/1 http://cbscg.ru/avtomatizaciya-1c [R=301,L]
+RewriteRule ^avtomatizaciya-1c/2 http://cbscg.ru/avtomatizaciya-1c [R=301,L]
+RewriteRule ^avtomatizaciya-1c/3 http://cbscg.ru/avtomatizaciya-1c [R=301,L]
+RewriteRule ^avtomatizaciya-1c/4 http://cbscg.ru/avtomatizaciya-1c [R=301,L]
+RewriteRule ^nezavisimaya-ocenka/1 http://cbscg.ru/nezavisimaya-ocenka [R=301,L]
+RewriteRule ^nezavisimaya-ocenka/2 http://cbscg.ru/nezavisimaya-ocenka [R=301,L]
+RewriteRule ^nezavisimaya-ocenka/3 http://cbscg.ru/nezavisimaya-ocenka [R=301,L]
+RewriteRule ^nezavisimaya-ocenka/4 http://cbscg.ru/nezavisimaya-ocenka [R=301,L]
 
 # Rewrite www.domain.com -> domain.com -- used with SEO Strict URLs plugin
 #RewriteCond %{HTTP_HOST} .
-#RewriteCond %{HTTP_HOST} !^example-domain-please-change\.com [NC]
-#RewriteRule (.*) http://example-domain-please-change.com/$1 [R=301,L]
+#RewriteCond %{HTTP_HOST} !^cbscg\.ru [NC]
+#RewriteRule (.*) http://cbscg.ru/$1 [R=301,L]
 #
 # or for the opposite domain.com -> www.domain.com use the following
 # DO NOT USE BOTH
@@ -75,8 +108,8 @@ RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 # For servers that support output compression, you should pick up a bit of
 # speed by un-commenting the following lines.
 
-#php_flag zlib.output_compression On
-#php_value zlib.output_compression_level 5
+php_flag zlib.output_compression On
+php_value zlib.output_compression_level 5
 
 
 
@@ -84,11 +117,11 @@ RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 # needed, un-comment the following rules. When they're in place, you may have
 # to do a force-refresh in order to see changes in your designs.
 
-#ExpiresActive On
-#ExpiresByType image/gif A2592000
-#ExpiresByType image/jpeg A2592000
-#ExpiresByType image/png A2592000
-#BrowserMatch "MSIE" brokenvary=1
-#BrowserMatch "Mozilla/4.[0-9]{2}" brokenvary=1
-#BrowserMatch "Opera" !brokenvary
-#SetEnvIf brokenvary 1 force-no-vary
+ExpiresActive On
+ExpiresByType image/gif A2592000
+ExpiresByType image/jpeg A2592000
+ExpiresByType image/png A2592000
+BrowserMatch "MSIE" brokenvary=1
+BrowserMatch "Mozilla/4.[0-9]{2}" brokenvary=1
+BrowserMatch "Opera" !brokenvary
+SetEnvIf brokenvary 1 force-no-vary

@@ -1,5 +1,4 @@
 <?php
-
 //SELECT k2.id, modx.id, k2.title, cat.name, k2.created, k2.hits, k2.alias, modx.pagetitle FROM `cbs_k2_items` k2 LEFT JOIN `modx_site_content` modx ON (k2.title = modx.pagetitle) LEFT JOIN `cbs_k2_categories` cat ON (k2.catid = cat.id) WHERE k2.id > 3421
 
 set_time_limit(500);

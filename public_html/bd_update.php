@@ -1,4 +1,5 @@
 <?php
+die();
 	$conn = mysql_connect ("localhost", "partneox_cbs", "M17vv*}w") or die ("Соединение не установлено!");
 	mysql_select_db("partneox_cbs") or die("База данных не найдена");
 	$result = mysql_query("SELECT id FROM cbs_k2_items WHERE featured = '1'");

@@ -1,0 +1,67 @@
+<?php  return array (
+  9 => 
+  array (
+    'id' => '9',
+    'namespace' => 'batcher',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'batcher:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'batcher',
+    'namespace_path' => '/home/p/partneox/cbscg.ru/public_html/core/components/batcher/',
+    'namespace_assets_path' => '',
+  ),
+  8 => 
+  array (
+    'id' => '8',
+    'namespace' => 'collections',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'collections:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'collections',
+    'namespace_path' => '/home/p/partneox/cbscg.ru/public_html/core/components/collections/',
+    'namespace_assets_path' => '{assets_path}components/collections/',
+  ),
+  3 => 
+  array (
+    'id' => '3',
+    'namespace' => 'console',
+    'controller' => 'console',
+    'haslayout' => '1',
+    'lang_topics' => 'console:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'console',
+    'namespace_path' => '/home/p/partneox/cbscg.ru/public_html/core/components/console/',
+    'namespace_assets_path' => '{assets_path}components/console/',
+  ),
+  1 => 
+  array (
+    'id' => '1',
+    'namespace' => 'formit',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'formit:mgr',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'formit',
+    'namespace_path' => '/home/p/partneox/cbscg.ru/public_html/core/components/formit/',
+    'namespace_assets_path' => '{assets_path}components/formit/',
+  ),
+  6 => 
+  array (
+    'id' => '6',
+    'namespace' => 'modupdater',
+    'controller' => 'index',
+    'haslayout' => '1',
+    'lang_topics' => 'modupdater:default',
+    'assets' => '',
+    'help_url' => '',
+    'namespace_name' => 'modupdater',
+    'namespace_path' => '/home/p/partneox/cbscg.ru/public_html/core/components/modupdater/',
+    'namespace_assets_path' => '',
+  ),
+);

@@ -17,7 +17,7 @@
                         <a data-target="#dispaly-movie" data-toggle="modal" href="#"><img src="/images/icon-play.png" />
                         </a>
                         <div class="watchVideoBtn">
-                            смотреть видео
+                            смотреть подробное видео об услуге
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,12 @@
                                     </button>
                                 </div>
                                 <div class="body-review">
-                                    {$video}
+                                   {*Если видео не заполнено, но это дочерняя услуга, подтянуть видео с родительской услуги*}
+                                    {if ($_modx->resource.template==19||$_modx->resource.template==15)&&($_modx->resource.video=='')}
+                                        [[#[[#[[*id]].parent]].video]]
+                                        {else}
+                                        {$video}
+                                    {/if}
                                 </div>
                             </div>
                         </div>
