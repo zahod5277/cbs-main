@@ -14,6 +14,8 @@
     <meta property="og:title" content="{$_modx->resource.pagetitle}" />
     <meta property="og:type" content="article" />
     <meta property="og:description" content="{$_modx->resource.seoDescription}" />
+    <meta name="msvalidate.01" content="5F75870078774B9E98BCB9A818CA9AF7" />
+    <meta name='wmail-verification' content='4828a11bd1f7c54c17d65bc342626fa9' />
     <meta name="keywords" content="{$_modx->resource.keywords}" />
     <meta name="yandex-verification" content="e7a35e4d705ce10e" />
     {if $_modx->resource.seoDescription==''}
