@@ -31,6 +31,7 @@
                     'includeTVs' => 'simplePrice,hourPrice,selectBoxPrice,PriceTitle,PriceFooter,buttonText',
                     'processTVs' => 1,
                     'prepareTVs' => 1,
+                    'sortdir' => 'ASC',
                     'sortby' => 'menuindex',
                     'totalVar' => 'totalus',
                     'where' => '{"template:=":"15"}',
