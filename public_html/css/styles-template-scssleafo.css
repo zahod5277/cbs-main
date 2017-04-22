@@ -4403,6 +4403,13 @@ div.itemFullText p,div.itemFullText div{
     text-decoration: none;
 }
 
+.companySlider .white-line{
+    background: rgba(0,0,0,0) url(/images/white_underline.png) no-repeat center 65px;
+    min-height: auto;
+    text-transform: uppercase;
+    padding-bottom: 29px;
+}
+
 /*Конец правок от 13-04*/
 @media print{    
     .phonesPrinted{

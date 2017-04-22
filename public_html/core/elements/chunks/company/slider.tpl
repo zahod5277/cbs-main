@@ -1,4 +1,4 @@
-<div class="main-slider">
+<div class="main-slider companySlider">
     <div class="container">
         <div class="custom">
             <br>
