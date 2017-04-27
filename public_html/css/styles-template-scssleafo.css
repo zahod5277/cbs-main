@@ -3159,7 +3159,7 @@ body.itemid-101 header {
   * style for form in header
   **/ }
 body.itemid-101 header .about-compane-yellow-icons {
-    margin: 50px 70px 160px; }
+    margin: 0px 70px 0px;}
 body.itemid-101 header .about-compane-yellow-icons .row > div {
     margin-top: 30px;
     margin-bottom: 30px; }
@@ -4093,6 +4093,20 @@ div.itemFullText p,div.itemFullText div{
     font-family: 'Roboto';
 }
 
+.childSrviceOuter h2,.childSrviceOuter p, .childSrviceOuter li{
+    font-family: 'RobotoLight';
+    color: #4b4a4a;
+    line-height: 28px;
+}
+
+.childSrviceOuter .module-title h2{
+    color: #0071bc!important;
+}
+
+.childSrviceOuter p,.childSrviceOuter li{
+    font-size: 18px;
+}
+
 .footerShare{
     float:right;
     position: relative;
@@ -4411,6 +4425,32 @@ div.itemFullText p,div.itemFullText div{
 }
 
 /*Конец правок от 13-04*/
+
+.secondLevelMenu{
+    display: none;
+    position: absolute;
+    padding: 0px;
+    color: white;
+    background: rgba(0,113,188,1);
+    padding: 20px 10px;
+    z-index:9000;
+}
+
+.item-125:hover>.secondLevelMenu{
+    display: block;
+}
+
+.secondLevelMenu a{
+    color: white;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.secondLevelMenu li{
+    display: block;
+    float:none;
+}
+
 @media print{    
     .phonesPrinted{
         position: relative;
