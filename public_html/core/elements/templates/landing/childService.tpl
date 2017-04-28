@@ -4,7 +4,7 @@
     {block 'ADV'}
     {/block}
 {/block}
-<div class="custom_exteded_text_block">
+<div class="custom_exteded_text_block childServiceOuterOuter">
 {block 'CONTENT'}
     {include 'file:chunks/landingBlocks/childService/childServiceOuter.tpl'}
         {include 'file:chunks/landingBlocks/video.tpl'}

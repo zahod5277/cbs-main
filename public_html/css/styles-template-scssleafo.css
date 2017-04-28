@@ -2913,6 +2913,7 @@ div._tape_news._proposal.f {
 /*    background: #fff; */
 }
 
+
 .container > ._proposal {
     margin-top: 40px; }
 
@@ -3351,7 +3352,7 @@ body.lang-ru header .static-top-menu .top-phone {
 .breadcrumbs .leo_breadcrumbs {
     padding: 15px; }
 .breadcrumbs .leo_breadcrumbs a {
-    font-size: 12px; }
+    font-size: 13px; }
 
 div.modal-dialog {
     margin: 100px auto 30px; }
@@ -4073,7 +4074,7 @@ catItemTitle h3{
 
 .blueBreadcrumb{
     color:#337ab7;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 div.itemFullText p,div.itemFullText div{
@@ -4090,21 +4091,28 @@ div.itemFullText p,div.itemFullText div{
 
 .childSrviceOuter{
     padding-left: 25px!important;
-    font-family: 'Roboto';
+    font-family: 'Tahoma', sans-serif;
+    font-size: 14px;
+}
+
+.childSrviceOuter h2{
+    font-size: 22px;
 }
 
 .childSrviceOuter h2,.childSrviceOuter p, .childSrviceOuter li{
-    font-family: 'RobotoLight';
+    font-family: 'Tahoma', sans-serif;
     color: #4b4a4a;
-    line-height: 28px;
+    line-height: 24px;
 }
 
 .childSrviceOuter .module-title h2{
     color: #0071bc!important;
+    font-size: 32px;
+    font-family: 'Roboto';
 }
 
 .childSrviceOuter p,.childSrviceOuter li{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .footerShare{
@@ -4269,24 +4277,29 @@ div.itemFullText p,div.itemFullText div{
 
 .childServiceSidebarMenuTitle{
     margin: 40px 0px;
-    font-size:24px;
+    font-size:18px;
+    font-family: 'Tahoma', sans-serif;
 }
 
 .childServiceSidebarMenu{
     margin-top: 20px;
     margin-bottom: 40px;
     padding-left: 0px;
+    font-family: 'Tahoma', sans-serif;
 }
 
 .childServiceSidebarMenu li{
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-family: 'Tahoma', sans-serif;
 }
 
 .childServiceSidebarMenu li a{
-    color: #000;
+    font-weight: bold;
+    color: #333;
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 14px;
+    font-family: 'Tahoma', sans-serif;
 }
 
 .childSrviceMenuOuter{
