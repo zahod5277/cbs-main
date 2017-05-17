@@ -1,4 +1,4 @@
-{if $_modx->resource.template!=15&&$_modx->resource.template!=19}
+{if ($_modx->resource.template!=15&&$_modx->resource.template!=19)||($_modx->resource.parent==5010)}
     {var $res = $_modx->resource.id}
 {else}
     {var $res = $_modx->resource.parent}
@@ -19,7 +19,7 @@
 {case 5036}
 {var $service = 'оценке'}
 {/switch}
-<h4 class="childServiceSidebarMenuTitle">Все услуги по {$service}</h4> 
+<h4 class="childServiceSidebarMenuTitle">Все услуги по {$service}</h4>
 <ul class="childServiceSidebarMenu">
      {$wrapper}
  </ul>

@@ -3,11 +3,16 @@
         <div class="custom_exteded_text_block">
             <div class="row">
                 <div class="col-xs-3">
-                {$_modx->runSnippet('pdoMenu',[
-                    'parents' => $_modx->resource.parent,
+                {if $_modx->resource.parent!=5010}
+                    {var $parent = $_modx->resource.parent}
+                    {else}
+                    {var $parent = $_modx->resource.id}
+                {/if}
+                {$_modx->runSnippet('!pdoMenu',[
+                    'parents' => $parent,
                     'level' => 1,
-                    'tplOuter' => '@FILE:chunks/landingBlocks/childService/childServiceSidebarMenuOuter.tpl',
-                    'tpl' => '@FILE:chunks/landingBlocks/childService/childServiceSidebarMenu.row.tpl' 
+                    'tpl' => '@FILE:chunks/landingBlocks/childService/childServiceSidebarMenu.row.tpl',
+                    'tplOuter' => '@FILE:chunks/landingBlocks/childService/childServiceSidebarMenuOuter.tpl'
                 ])}
                 </div>
                 <div class="col-xs-9 childSrviceOuter">

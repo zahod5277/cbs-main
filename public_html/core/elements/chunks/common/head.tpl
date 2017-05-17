@@ -8,7 +8,6 @@
         {/if}
     <title>{$title}</title>
     <base href="{$_modx->config.site_url}" />
-    
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta property="og:url" content="http://cbscg.ru/" />
     <meta property="og:title" content="{$_modx->resource.pagetitle}" />
