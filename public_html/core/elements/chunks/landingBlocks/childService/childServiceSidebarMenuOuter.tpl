@@ -23,3 +23,4 @@
 <ul class="childServiceSidebarMenu">
      {$wrapper}
  </ul>
+{include 'file:chunks/landingBlocks/certs.tpl'}

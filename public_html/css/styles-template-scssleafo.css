@@ -361,7 +361,8 @@ body .main-slider .navigation-container-custom {
 
 .menu_top li{
     float: left;
-    margin-right: 48px; }
+    margin-right: 42px;
+}
 
 .menu_bottom li{
     float: left;
@@ -4439,6 +4440,10 @@ div.itemFullText p,div.itemFullText div{
 
 /*Конец правок от 13-04*/
 
+.justifyfull{
+    text-align: justify;
+}
+
 .secondLevelMenu{
     display: none;
     position: absolute;
@@ -4463,6 +4468,55 @@ div.itemFullText p,div.itemFullText div{
     display: block;
     float:none;
 }
+
+/* CERTS */
+.sidebarCertsImg{
+    margin-bottom: 30px;
+    border:2px solid #ccc;
+}
+
+.ratingsTitle{
+    font-weight: bold!important;
+    font-family: "Tahoma",sans-serif;
+    color: #333;
+    font-size: 14px;
+    margin: 10px 0px 20px 0px!important;
+}
+
+.ratings_outer .mb30px{
+    margin-bottom: 30px!important;
+}
+
+.certsDescription{
+   font-size: 14px;
+   color:black;
+   font-family: 'RobotoLight';
+   line-height: 1.42857143;
+   margin: 0px!important;
+}
+
+.certsUnderImgDescription{
+    text-align: center;
+    padding: 0px 150px;
+    font-family: 'RobotoLight';
+    font-size: 14px;
+    margin: 0px!important;
+    line-height: 1.42857143;
+}
+
+.certsRow{
+    margin-bottom: 30px;
+}
+
+.modalDelimeter{
+    margin-top: 20px;
+}
+
+.sidebarCerts .infocenterRedModal{
+    padding-top: 14px;
+}
+
+/* /CERTS */
 
 @media print{    
     .phonesPrinted{

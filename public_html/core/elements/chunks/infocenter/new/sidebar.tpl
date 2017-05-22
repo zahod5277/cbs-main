@@ -51,5 +51,6 @@
             'validationErrorMessage' => '<h5>В форме содержатся ошибки!</h5>',
             'successMessage' => '<h5>Сообщение успешно отправлено</h5>'
         ])}
+        {include 'file:chunks/landingBlocks/certs.tpl'}
     </div>
 </div>
