@@ -4,7 +4,10 @@
          CBS Group - одна из лидирующих компаний России в области аудита, учета и консалтинга
      </h4>
      <div class="moduleAttachments">
-     <a href="images/certs/certificate1Thumb.jpg" class="boxed" rel="images/certs/certificate1Thumb.jpg"><img src="images/certs/certificate1MicroThumb.jpg" class="sidebarCertsImg img img-responsive"></a>
+     {$_modx->runSnippet('BannerY',[
+        'position' => 3,
+        'tpl' => '@INLINE <img src="{$image}" class="sidebarCertsImg img img-responsive">'
+      ])}
      </div>
     <span class="infocenterRedModal">
         Узнать стоимость услуги в день обращения 
@@ -23,9 +26,8 @@
         ])}
      {/if}
      <div class="modalDelimeter"></div>
-     <a href="{'5584'|url}"><img src="images/certs/1.jpg" class="sidebarCertsImg img img-responsive"></a>
-     <a href="{'5524'|url}"><img src="images/certs/2.jpg" class="sidebarCertsImg img img-responsive"></a>
-     <a href="{'5545'|url}"><img src="images/certs/3.jpg" class="sidebarCertsImg img img-responsive"></a>
-     <a href="{'5544'|url}"><img src="images/certs/4.jpg" class="sidebarCertsImg img img-responsive"></a>
-     <a href="{'5585'|url}"><img src="images/certs/5.jpg" class="sidebarCertsImg img img-responsive"></a>
+     {$_modx->runSnippet('BannerY',[
+         'position' => 1,
+         'tpl' => '@INLINE <a href="{$url}"><img src="{$image}" class="sidebarCertsImg img img-responsive"></a>'
+    ])}
  </div>
