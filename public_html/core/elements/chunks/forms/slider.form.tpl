@@ -16,7 +16,7 @@
             </div>
             <div class="col-xs-4">
                 <button class="leo-black-btn btn-block send-email" type="submit">
-                    Отправляю заявку
+                    Заказать обратный звонок
                 </button>
             </div>
         </div>

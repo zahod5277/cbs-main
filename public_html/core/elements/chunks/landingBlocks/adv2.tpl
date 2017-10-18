@@ -4,7 +4,7 @@
         'tpl' => 'adv2.row.tpl'
     ])}
 {*Если преимущества не заполнены, но это дочерняя услуга, подтянуть преимущества с родительской услуги*}
-{elseif ($_modx->resource.adv2=='')&&($_modx->resource.template==19||$_modx->resource.template==15)}
+{elseif ($_modx->resource.adv2=='')&&($_modx->resource.template==19||$_modx->resource.template==15||$_modx->resource.template==24)}
     {var $adv2 = $_modx->runSnippet('getImageList',[
         'tvname' => 'adv2',
         'tpl' => 'adv2.row.tpl',

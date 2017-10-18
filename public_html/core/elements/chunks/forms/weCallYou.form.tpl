@@ -20,6 +20,8 @@
                         </div>
                         <input type="text" class="tushenka" value="" name="tushenka">
                         <input name="ask-question" type="hidden" value="1" />
+                        <input name="pagetitle" type="hidden" value="{$_modx->resource.pagetitle}">
+                        <input name="calcData" type="hidden" value="">
                         <button class="send-email leo-button-block" type="submit">Отправить</button>
                     </div>
                 </form>

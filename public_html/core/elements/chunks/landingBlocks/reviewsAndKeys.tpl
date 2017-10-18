@@ -2,7 +2,7 @@
     <div class="container">
     </div>
 </div>
-<div class="our-client-comments">
+<div class="our-client-comments" id="clientReviews">
     <div class="container">
         {if $_modx->resource.reviewId!=''}
             <div class=" buch_comments _service_paginator">
@@ -59,7 +59,7 @@
             </div>
         {/if}
         {if $_modx->resource.keysId!=''}
-            <div class=" _buch_keys _service_keys_paginator">
+            <div class=" _buch_keys _service_keys_paginator" id="projectKeys">
                 <div class="blue module-title">
                     <h2>Кейсы</h2>
                 </div>

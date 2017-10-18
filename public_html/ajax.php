@@ -18,6 +18,12 @@ if (!empty($_POST['action'])) {
                 'point' => $_POST['point']
             ));
             break;
+        case 'getDependedOptions':
+            $res = $pdo->runSnippet('@FILE:snippets/getDependedOptions.php',[
+                'option' => $_POST['val'],
+                'page' => $_POST['page']
+            ]);
+            break;
     }
 } else {
     return;

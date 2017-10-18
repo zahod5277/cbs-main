@@ -20,7 +20,6 @@
     {include 'file:chunks/company/about.tpl'}
     {include 'file:chunks/company/adv.tpl'}
     {include 'file:chunks/company/workers.tpl'}
-    {include 'file:chunks/landingBlocks/ratings.tpl'}
     <div class="container">
     </div>
     <div class="leo-outside-bottom">

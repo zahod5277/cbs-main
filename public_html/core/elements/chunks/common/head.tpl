@@ -30,8 +30,8 @@
     {/if}    
     <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    {$_modx->runSnippet('MinifyX',[
-    'minifyCss' => '1',
+    {$_modx->runSnippet('!MinifyX',[
+    'minifyCss' => '0',
     'minifyJs' => '0',
     'registerCss' => 'default',
     'cssSources' => '
@@ -43,7 +43,11 @@
        shadowbox/shadowbox/examples/build/shadowbox.css,
        rokbox/assets/styles/rokbox.css,
        css/styles-template-scssleafo.css,
-       css/infocenternew.css'
+       css/infocenternew.css,
+       css/calculator.css,
+       css/sliderCalc.css,
+       css/calcService.css,
+       css/footer-cta-menu.css'
     ])}
 <script src="js/mootools-core.js" type="text/javascript"></script>
     <script src="js/core.js" type="text/javascript"></script>
@@ -56,6 +60,7 @@
     <script src="rokbox/assets/js/rokbox.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/jquery.simplePagination.js"></script>
     <script type="text/javascript" src="js/hash.js"></script>
+    <script type="text/javascript" src="js/calculator.js"></script>
     {ignore}
     <script type="text/javascript">
         window.addEvent('domready', function () {
@@ -90,5 +95,5 @@
     <meta property="fb:app_id" content="890436047736649"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-<script src="js/template.js?283" type="text/javascript"></script>
+<script src="js/template.js" type="text/javascript"></script>
 </head>

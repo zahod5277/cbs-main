@@ -1,5 +1,50 @@
 // check and define $ as jQuery
 if (typeof jQuery != "undefined") jQuery(function ($) {
+    //smooth scroll
+    jQuery('a[data-scroll]').on('click', function(e){
+        e.preventDefault();
+        if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: ($(hash).offset().top)-80
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } 
+    });
+    //получаем показатели калькулятора для формы с заявкой
+    jQuery('.block-cta-heading_underline').on('click', function(){
+       var calcData='', title,val;
+       jQuery('.calculatorOuter select').each(function(){
+           title = jQuery(this).siblings('.calculator-form-label').find('.calculator-form-label-text').html();
+           val = jQuery('option:selected',this).text();
+           calcData += title +' '+ val+'<br>';
+       });
+       jQuery('.calculatorOuter input:checked').each(function(){
+           val = jQuery(this).val();
+           calcData += val+'<br>';
+       });
+       jQuery('input[name="calcData"]').val(calcData);
+    });
+    //код-говно, но я уже устал делать хорошо, за такие-то хм, мани
+    jQuery('.main-slider [data-toggle="modal"]').on('click', function(){
+        var calcData='', title,val;
+        calcData = $('#sliderCalcParams').val();
+        jQuery('.main-slider input:checked').each(function(){
+           val = jQuery(this).parents('.slider-options-bonus__item-outer').find('label').text();
+           calcData += val+'<br>';
+       });
+       jQuery('input[name="calcData"]').val(calcData);
+    });
+    
     // dump(myVar); is wrapper for console.log() with check existing console object and show 
     window.dump=function(vars,name,showTrace){if(typeof console=="undefined")return false;if(typeof vars=="string"||typeof vars=="array")var type=" ("+typeof vars+", "+vars.length+")";else var type=" ("+typeof vars+")";if(typeof vars=="string")vars='"'+vars+'"';if(typeof name=="undefined")name="..."+type+" = ";else name+=type+" = ";if(typeof showTrace=="undefined")showTrace=false;console.log(name,vars);if(showTrace)console.trace();return true};
     // remove no-js class if JavaScript enabled
@@ -39,7 +84,6 @@ if (typeof jQuery != "undefined") jQuery(function ($) {
 			menu.find('ul').css({'display': 'none'});
 		}
 	})
-
     jQuery(".wraper-princip-work > div").on('click', function() {
         var self = this;
         var parent = $(this).closest('.custom_page_info_block_news');
@@ -61,11 +105,13 @@ if (typeof jQuery != "undefined") jQuery(function ($) {
         jQuery(".full-proffesionals > .wrap-desc-proffesional:nth-child("+num+")").removeClass('hidden');
     });
 	$(window).on( "scroll", function() {
-		var offset = $(window).scrollTop();
-		var $menu = $('#leo-top-menu:not(.infocenter-menu-top)');
-		var $phone = $('.top-right-block');
+		var offset = $(window).scrollTop(),
+                    $menu = $('#leo-top-menu:not(.infocenter-menu-top)'),
+                    $footerMenu = $('.bottom-cta-menu'),
+                    $phone = $('.top-right-block');
 		if(offset<200) {
 			$menu.find('.top-right-block').remove();
+                        $footerMenu.removeClass('static-top-menu');
 			//$phone.removeClass('static-top-right-block');
 			return $menu.removeClass('static-top-menu');
 		}
@@ -76,6 +122,7 @@ if (typeof jQuery != "undefined") jQuery(function ($) {
 //		$phone.clone().appendTo($menu.find('.leo-wrap-menu'));
 		//$phone.addClass('static-top-right-block');
 		$menu.addClass('static-top-menu');
+                $footerMenu.addClass('static-top-menu');
 	});
 	$('.leo-full-text .read-more > span').on('click', function() {
 		$(this).closest('.leo-full-text').find('.full-text').removeClass('hidden');

@@ -164,10 +164,21 @@
         })(document, window, "yandex_metrika_callbacks");
     </script>
     <script src="/js/smoothScroll.js"></script>
-    <script type="text/javascript" src="https://login.sendpulse.com/members/forms/user-form-js/ac/b9f17eafed5a89ff435a7f836a255b36a32d5a09887b746f8e201e55602c2f65/c/1/"></script>
 <noscript>
     <div>
         <img src="https://mc.yandex.ru/watch/22051156" style="position:absolute; left:-9999px;" alt="" />
     </div>
 </noscript>
 <!-- /Yandex.Metrika counter --> 
+{ignore}
+<script>
+  (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments) },i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48458331-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+{/ignore}

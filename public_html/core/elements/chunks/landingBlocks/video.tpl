@@ -8,7 +8,7 @@
     {else}
     {var $videoImg = ''}
 {/if}
-<div class="our-advantage-videoblockf">
+<div class="our-advantage-videoblockf" id="shortVideo">
     <div class="container">
         <div class=" ">
             <div class="custom">

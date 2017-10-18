@@ -3,19 +3,19 @@
         <div class="custom_exteded_text_block">
             <div class="row">
                 <div class="col-xs-3">
-                {if $_modx->resource.parent!=5010}
-                    {var $parent = $_modx->resource.parent}
+                    {if $_modx->resource.parent!=5010}
+                        {var $parent = $_modx->resource.parent}
                     {else}
-                    {var $parent = $_modx->resource.id}
-                {/if}
-                {$_modx->runSnippet('!pdoMenu',[
+                        {var $parent = $_modx->resource.id}
+                    {/if}
+                    {$_modx->runSnippet('!pdoMenu',[
                     'parents' => $parent,
                     'level' => 1,
                     'tpl' => '@FILE:chunks/landingBlocks/childService/childServiceSidebarMenu.row.tpl',
                     'tplOuter' => '@FILE:chunks/landingBlocks/childService/childServiceSidebarMenuOuter.tpl'
                 ])}
                 </div>
-                <div class="col-xs-9 childSrviceOuter">
+                <div class="col-xs-9 childSrviceOuter" id="serviceDescription">
                     <div class="module-title blue">
                         <h2>
                             {$_modx->resource.pagetitle}
@@ -26,7 +26,8 @@
             </div>
         </div>
     </div>
-    <div class="mb40px">
-        {include 'file:chunks/landingBlocks/consultForm.tpl'}
-    </div>
+</div>
+<div class="mb40px">
+    {include 'file:chunks/landingBlocks/consultForm.tpl'}
+</div>
 </div>

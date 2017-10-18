@@ -1,4 +1,4 @@
-<div class="ratings">
+<div class="ratings" id="ratings">
     <div class="container">
         <div class="ratings_outer">
             <div class="blue module-title">
