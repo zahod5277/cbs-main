@@ -9,6 +9,12 @@
     transition: 0.5s ease all;
 }
 
+@media(max-width:999px){
+    .bottom-cta-menu{
+        top: 111vh;
+    }
+}
+
 .bottomCtaForm{
     display: inline-block;
 }

@@ -20,7 +20,7 @@
                             <option value="{$variant.price}">{$variant.value}</option>
                         {/foreach}
                     </select>
-                    <p class="slider-form__block slider-form__block_sum">От <strong></strong> рублей</p>
+                    <p class="slider-form__block slider-form__block_sum">от <strong></strong> рублей</p>
                     <button class="slider-form__block slider-form__block_order" data-target="#getServiceCalc" data-toggle="modal">Заказать</button>
                 </div>
             {/if}

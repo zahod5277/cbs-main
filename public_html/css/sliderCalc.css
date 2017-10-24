@@ -42,6 +42,7 @@
     -moz-appearance: none;
     appearance: none;
     outline:none;
+    background-size: contain;
 }
 
 .slider-form__block_sum{
@@ -116,6 +117,7 @@
     background-repeat: no-repeat;
     background-position: center left;
     margin-right: 10px;
+    background-size: contain;
 }
 
 .slider-options-bonus__item_bonus{
@@ -160,6 +162,7 @@
     display: inline-block;
     margin-right: 15px;
     background-position: bottom left;
+    background-size: contain;
 }
 
 .little-slider-links-item{

@@ -30,6 +30,7 @@
     background-position: bottom left;
     margin-right:10px;
     position: relative;
+    background-size: contain;
     top: 5px;
 }
 
@@ -68,6 +69,7 @@
     width: 30px;
     height: 30px;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: bottom left;
     margin-right:10px;
 }
@@ -86,6 +88,7 @@
     font-size: 16px;
     background-image: url('/images/calc-dropdown.png');
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: right;
     min-width: 416px;
     border: 1px solid #8c8b8b;
@@ -235,6 +238,7 @@
     height: 31px;
     display: inline-block;
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
 }
 
@@ -274,14 +278,16 @@
 }
 
 .calculator-additional-list{
-    float:left;
     list-style: none;
     padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .calculator-additional-list li{
     min-width: 250px;
-    float:left;
+    flex: 0 0 48%;
 }
 
 .calculator-additional-list-item::before{

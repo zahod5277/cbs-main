@@ -4,7 +4,7 @@
         'tpl' => 'companyRecords.row.tpl'
     ])}
 {*Если достижения не заполнены, но это дочерняя услуга, подтянуть достижения с родительской услуги*}  
-{elseif ($_modx->resource.companyRecords=='')&&($_modx->resource.template==19||$_modx->resource.template==15)}
+{elseif ($_modx->resource.companyRecords=='')&&($_modx->resource.template==19||$_modx->resource.template==15||$_modx->resource.template==24)}
     {var $companyRecords = $_modx->runSnippet('getImageList',[
         'tvname' => 'companyRecords',
         'tpl' => 'companyRecords.row.tpl',

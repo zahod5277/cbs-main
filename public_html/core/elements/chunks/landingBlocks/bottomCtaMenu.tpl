@@ -15,6 +15,9 @@
         {if $_modx->resource.calcLink?}
         <a target="_blank" href="{$_modx->resource.calcLink|url}"><i class="bottom-cta-menu__ico" style="background-image: url('images/ico_calculator_white.png')"></i>Калькулятор стоимости</a>
         {/if}
+        {if $_modx->resource.template == '22'}
+            <a target="_blank" href="{$_modx->resource.id|url}"><i class="bottom-cta-menu__ico" style="background-image: url('images/ico_calculator_white.png')"></i>Калькулятор стоимости</a>
+        {/if}
         <a href="#" data-target="#getOffer" data-toggle="modal"><i class="bottom-cta-menu__ico" style="background-image: url('images/ico-letter.png')"></i>Получить предложение</a>
         <a href="#" data-target="#getContract" data-toggle="modal"><i class="bottom-cta-menu__ico" style="background-image: url('images/ico-contract.png')"></i>Посмотреть договор</a>
     </div>

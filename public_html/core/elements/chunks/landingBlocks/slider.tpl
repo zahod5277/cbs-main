@@ -13,6 +13,7 @@
                 {$_modx->resource.landingDescr}
             </div>*}
             {include 'file:chunks/landingBlocks/sliderForm.tpl'}
+            {if $_modx->resource.template!=22}
             <div class="get-presentation">
                 {if $_modx->resource.landingFile==''&&($_modx->resource.template==19||$_modx->resource.template==15)}
                         {var $landingFile = '[[#[[#[[*id]].parent]].landingFile]]'}
@@ -20,6 +21,7 @@
                         {var $landingFile = $_modx->resource.landingFile}
                 {/if}
             </div>
+            {/if}
             <div class="get-more">
             {*<div>
                     {$_modx->resource.formTrigger}

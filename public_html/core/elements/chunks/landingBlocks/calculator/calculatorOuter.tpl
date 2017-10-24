@@ -21,14 +21,14 @@
                             {$_modx->resource.pagetitle}
                         </h2>
                     </div>
-                        <p class="calculator-text-description">Быстро и просто рассчитайте стоимость аудита  вашей компании.
-                        Наш калькулятор аудита очень прост. Но при этом он очень точен.
-                        Посчитав стоимость аудита не забудьте заказать коммерческое предложение.
-                        С помощью него вы зафиксируете свою стоимость и сможете провести аудит на полученных условиях.</p>
+                        <p class="calculator-text-description">
+                        {$_modx->resource.calcText}
+                        </p>
                     {if $_modx->resource.calcFunctions?}
                     <div class="calculator-block">
                         <h3 class="calculator-block__heading">
-                            <i class="calculator-block__ico calculator-block__ico_calc" style="background-image:url('images/ico_calculator.png')"></i> Наш калькулятор определяет стоимость
+                            <i class="calculator-block__ico calculator-block__ico_calc" style="background-image:url('images/ico_calculator.png')"></i>
+                             Наш калькулятор определяет стоимость
                         </h3>
                         <div class="calculator-block__inner">
                             {var $functions = $_modx->resource.calcFunctions|fromJSON}
@@ -42,6 +42,10 @@
                         </div>
                     </div>
                     {/if}
+                    <h3 class="calculator-block__heading">
+                         <i class="calculator-block__ico calculator-block__ico_calc" style="background-image:url('images/ico_tumblers.png')"></i> 
+                        Выберите необходимые показатели
+                    </h3>
                     {var $calculator = $_modx->resource.calculatorParams|fromJSON}
                     <div class="calculator-form-select">
                         <label for="" class="calculator-form-label calculator-form-label_first">
@@ -126,7 +130,7 @@
                     {if $_modx->resource.addServices?}
                     <div class="calculator-block">
                         <h3 class="calculator-block__heading">
-                            <i class="calculator-block__ico calculator-block__ico_calc" style="background-image:url('images/ico_calccart.png')"></i> Дополнительно к аудиту вы сможете получить следующие услуги
+                            <i class="calculator-block__ico calculator-block__ico_calc" style="background-image:url('images/ico_calccart.png')"></i> Дополнительно вы сможете получить следующие услуги
                         </h3>
                         <div class="calculator-block__inner">
                             {var $addServices = $_modx->resource.addServices|fromJSON}

@@ -6,6 +6,10 @@
     margin-top: 6px;
 }
 
+.sidebar-calc-link{
+    color:black;
+}
+
 .sidebar-calc p{
     font-family: 'Roboto', 'Tahoma',sans-serif;
     font-weight: 300;

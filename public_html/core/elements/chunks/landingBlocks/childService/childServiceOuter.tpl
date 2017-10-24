@@ -27,7 +27,8 @@
         </div>
     </div>
 </div>
-<div class="mb40px">
-    {include 'file:chunks/landingBlocks/consultForm.tpl'}
-</div>
+<div class="container">
+    <div class="mb40px" style="margin-top:40px;">
+        {include 'file:chunks/landingBlocks/consultForm.tpl'}
+    </div>
 </div>
